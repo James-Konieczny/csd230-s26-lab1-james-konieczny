@@ -22,6 +22,14 @@ public class BookEntity extends PublicationEntity {
     public void setAuthor(String author) { this.author = author; }
 
     @Override
+    public String toString() {
+        return "BookEntity{" +
+                "author='" + author + '\'' + ", "
+                + super.toString() +
+                '}';
+    }
+
+    @Override
     public void sellItem() {
         System.out.println("Selling Book");
     }
